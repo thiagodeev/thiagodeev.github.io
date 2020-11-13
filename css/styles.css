@@ -11,15 +11,32 @@ ul li {
     display: none;
 }
 
+nav {
+    background-color: red;
+}
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 3em;
-    background-color: red;
+    height: 2.5em;
     font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 5%;
+}
+
+.li-span {
+    display: block;
+    text-align: center;
+}
+
+.container-profile {
+    margin: 10% 10% 0;
+}
+
+.img-div {
+    padding: 2em;
 }
 
 .img {
-    max-width: 100%;
+    max-width: 100%;    
 }
