@@ -1,0 +1,25 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.barra-lateral {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+    background-color: red;
+    font-size: 1.3em;
+}
+
+.img {
+    max-width: 100%;
+}
