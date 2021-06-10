@@ -1,21 +1,10 @@
-body {
+* {
     font-family: 'Didact Gothic', sans-serif;
-}
-
-ul li {
-    list-style: none;
-    text-decoration: none;
-}
-
-.barra-lateral {
-    display: none;
-}
-
-nav {
-    background-color: red;
+    line-height: 1.5rem;
 }
 
 .navbar {
+    background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,10 +15,15 @@ nav {
     margin: 0 5%;
 }
 
-.li-span {
-    display: block;
+ul li {
+    text-decoration: none;
     text-align: center;
 }
+
+/* .barra-lateral {
+    display: none;
+} */
+
 
 .container-profile {
     margin: 10% 10% 0;
