@@ -5,7 +5,7 @@
 body {
     font-family: 'Baloo Tammudu 2', cursive;
     width: 100%;
-    line-height: 1.5rem;
+    line-height: 1.5em;
 }
 
 nav {
@@ -55,12 +55,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5em;
     background-color: black;
     color: white;
     font-size: 1.10rem;
 }
 
 footer li {
-    padding: 0.5rem;
+    padding: 0.5em;
 }
