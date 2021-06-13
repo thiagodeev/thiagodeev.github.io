@@ -66,5 +66,5 @@ footer li {
 }
 
 .facebook-icon::before {
-    
+    content: url();
 }
