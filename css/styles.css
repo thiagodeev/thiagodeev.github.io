@@ -23,7 +23,7 @@ ul li {
     text-align: center;
 }
 
-nav {
+header nav {
     background-color: #d50000;
 }
 
@@ -66,6 +66,15 @@ footer li {
 
 footer li a {
     text-decoration: none;
+    color: whitesmoke;
+}
+
+footer li a:hover, a:visited, a:focus, a:active{
+    color: whitesmoke;
+}
+
+footer li a spam {
+    vertical-align: middle;
 }
 .footer {
     width: 100%;
@@ -76,4 +85,8 @@ footer li a {
     background-color: black;
     color: white;
     font-size: 1.10rem;
+}
+
+.facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
+    width: 20px;
 }
