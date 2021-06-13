@@ -1,11 +1,26 @@
+/* --------- universais -----------*/
 * {
     box-sizing: border-box;
 }
+/* --------- fontes -----------*/
 
+@font-face {
+    font-family: "Baloo Tammudu 2";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Baloo Tammudu 2"), url(../fonts/BalooTammudu2-Regular.ttf) format("truetype");
+  }
+
+/* --------- site -----------*/
 body {
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: "Baloo Tammudu 2", cursive;
     width: 100%;
     line-height: 1.5em;
+}
+
+ul li {
+    text-decoration: none;
+    text-align: center;
 }
 
 nav {
@@ -21,11 +36,6 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     color: #ffffff;
-}
-
-ul li {
-    text-decoration: none;
-    text-align: center;
 }
 
 /* .barra-lateral {
@@ -50,6 +60,13 @@ footer {
     bottom: 0px;
 }
 
+footer li {
+    padding: 0.5em;
+}
+
+footer li a {
+    text-decoration: none;
+}
 .footer {
     width: 100%;
     display: grid;
@@ -61,10 +78,6 @@ footer {
     font-size: 1.10rem;
 }
 
-footer li {
-    padding: 0.5em;
-}
-
 .facebook-icon::before {
-    content: url();
+    content: url(../images/svgs/045-facebook.svg);
 }
