@@ -77,7 +77,3 @@ footer li a {
     color: white;
     font-size: 1.10rem;
 }
-
-.facebook-icon::before {
-    content: url(../images/svgs/045-facebook.svg);
-}
