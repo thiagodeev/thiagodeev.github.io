@@ -52,6 +52,10 @@ header nav {
     display: none;
 } */
 
+.hobbies {
+  list-style: inside;
+}
+
 
 .container-profile {
     margin: 10% 10% 0;
