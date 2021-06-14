@@ -16,7 +16,7 @@
 /* --------- general classes -----------*/
 
 .sections-title {
-    color: #5C5C5C;   
+    color: #777474;   
     font-style: italic;
     margin: 1em 0;
 }
@@ -28,6 +28,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     line-height: 1.5em;
+    font-size: 18px;
 }
 
 header nav {
@@ -54,22 +55,44 @@ header nav {
 
 main {
     text-align: justify;
-    margin: 7% 7% 0;
+    margin: 7% 3% 0;
 }
 
-.hobbies {
-  list-style-image: url(../images/svgs/terminal-solid.svg);
-  list-style-position: inside;
-  margin-top: 1em;
+.my-profile {
+    background-color: rgb(19, 18, 18);
+    border-radius: 20px;
+    padding: 6%;
+    color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0px 0px 8px 0px black;
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.img-div {
-    padding: 2em;
+.figure-img {
+    position: relative;
+    padding: 1em;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 .img {
-    max-width: 100%;    
+    max-width: 100%;  
+    border-radius: 20px;  
 }
+
+.profile {
+    flex-grow: 2;
+}
+
+.hobbies {
+    list-style-image: url(../images/svgs/terminal-solid.svg);
+    list-style-position: inside;
+    margin-top: 1em;
+}
+
 
 footer {
     width: 100%;
