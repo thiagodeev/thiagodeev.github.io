@@ -52,13 +52,15 @@ header nav {
     display: none;
 } */
 
-.hobbies {
-  list-style: inside;
+main {
+    text-align: justify;
+    margin: 5% 5% 0;
 }
 
-
-.container-profile {
-    margin: 10% 10% 0;
+.hobbies {
+  list-style-image: url(../images/svgs/terminal-solid.svg);
+  list-style-position: inside;
+  margin-top: 1em;
 }
 
 .img-div {
