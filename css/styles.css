@@ -58,12 +58,14 @@ main {
     margin: 7% 3% 0;
 }
 
-.my-profile {
+.section {
     background-color: rgb(19, 18, 18);
     border-radius: 20px;
     padding: 6%;
     color: rgba(255, 255, 255, 0.932);
     box-shadow: 0px 0px 5px 0px black;
+}
+.my-profile {
     display: flex;
     -webkit-display: flex;
     flex-direction: column;
@@ -73,13 +75,15 @@ main {
 
 .figure-img {
     position: relative;
-    padding: 1em;
     flex-grow: 1;
     flex-shrink: 2;
 }
 
 .img {
-    max-width: 100%;  
+    max-width: 100%;
+    max-height: 400px;
+    /* object-fit: none;
+    object-position: top; */
     border-radius: 20px;  
 }
 
@@ -93,11 +97,15 @@ main {
     margin-top: 1em;
 }
 
+.section:nth-child(2), .section:nth-child(3){
+    margin-top: 3em;
+}
 
 footer {
     width: 100%;
     bottom: -10px;
     margin-top: 5em;
+    background-color: #2c2c2c;
 }
 
 footer li {
@@ -116,20 +124,37 @@ footer li a:hover, a:visited, a:focus, a:active{
 footer li a spam {
     vertical-align: middle;
 }
+
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    /* grid-template-columns: 1fr 1fr; */
+    grid: repeat(3, 1fr) / 1fr 1fr;
     padding: 2rem 1.5em;
     color: white;
     font-size: 1.10rem;
     text-align: center;
 }
 
-.footer-color {
-    background-color: #2c2c2c;
+footer li:nth-child(5) {
+    grid-column: span 2;
+    text-decoration: underline;
 }
 
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
     width: 20px;
 }
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+  }
