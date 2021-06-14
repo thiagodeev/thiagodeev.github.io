@@ -71,7 +71,9 @@ header nav {
 
 footer {
     width: 100%;
-    bottom: 0px;
+    bottom: -10px;
+    margin-top: 5em;
+    background-color: black;
 }
 
 footer li {
@@ -95,7 +97,6 @@ footer li a spam {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     padding: 2rem 1.5em;
-    background-color: black;
     color: white;
     font-size: 1.10rem;
     text-align: center;
