@@ -65,6 +65,7 @@ main {
     color: rgba(255, 255, 255, 0.932);
     box-shadow: 0px 0px 5px 0px black;
 }
+
 .my-profile {
     display: flex;
     -webkit-display: flex;
@@ -75,26 +76,19 @@ main {
 
 .figure-img {
     position: relative;
-    flex-grow: 1;
-    flex-shrink: 2;
 }
 
 .img {
     max-width: 100%;
     max-height: 400px;
-    /* object-fit: none;
-    object-position: top; */
     border-radius: 20px;  
-}
-
-.profile {
-    flex-grow: 2;
 }
 
 .hobbies {
     list-style-image: url(../images/svgs/terminal-solid.svg);
     list-style-position: inside;
     margin-top: 1em;
+    grid-area: hobbies;
 }
 
 .section:nth-child(2), .section:nth-child(3){
@@ -147,14 +141,38 @@ footer li:nth-child(5) {
 
 
 
-@media only screen and (min-width: 768px) {
-    /* For tablets: */
-
-  }
-
-
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+
+    .my-profile {
+        display: grid;
+        grid-template-areas:
+        "img h1"
+        "img p"
+        "hobbies hobbies";
+        gap: 20px;
+        column-gap: 40px;
+    }
+
+    .figure-img {
+        grid-area: img;
+    }
+
+    .my-profile h1 {
+        grid-area: h1;
+    }
+    
+    .my-profile p {
+        grid-area: p;
+    }
+
+    .hobbies {
+        grid-area: hobbies;
+    }
+
+
+
+
 
   }
