@@ -63,7 +63,7 @@ main {
     border-radius: 20px;
     padding: 6%;
     color: rgba(255, 255, 255, 0.932);
-    box-shadow: 0px 0px 8px 0px black;
+    box-shadow: 0px 0px 5px 0px black;
     display: flex;
     -webkit-display: flex;
     flex-direction: column;
@@ -98,7 +98,6 @@ footer {
     width: 100%;
     bottom: -10px;
     margin-top: 5em;
-    background-color: black;
 }
 
 footer li {
@@ -125,6 +124,10 @@ footer li a spam {
     color: white;
     font-size: 1.10rem;
     text-align: center;
+}
+
+.footer-color {
+    background-color: #2c2c2c;
 }
 
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
