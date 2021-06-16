@@ -4,7 +4,7 @@ body {
     width: 100%;
     line-height: 1.5em;
     font-size: 16px;
-    background: url(../images/svgs/binary.svg);
+    background: url(images/svgs/binary.svg);
     background-size: 360px;
     background-color: #000000d1;
 }
@@ -37,7 +37,7 @@ main {
 }
 
 .sections {
-    background-color: #131212;
+    background-color: rgb(19 18 18 / 90%);
     border-radius: 20px;
     padding: 6%;
     color: rgba(255, 255, 255, 0.932);
@@ -71,7 +71,7 @@ main {
 }
 
 .lists {
-    list-style-image: url(../images/svgs/terminal-solid.svg);
+    list-style-image: url(images/svgs/terminal-solid.svg);
     list-style-position: inside;
     margin-top: 1em;
     grid-area: hobbies;
