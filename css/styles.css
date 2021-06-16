@@ -84,7 +84,7 @@ main {
     border-radius: 20px;  
 }
 
-.hobbies {
+.lists {
     list-style-image: url(../images/svgs/terminal-solid.svg);
     list-style-position: inside;
     margin-top: 1em;
