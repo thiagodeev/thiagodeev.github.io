@@ -144,6 +144,10 @@ footer li:nth-child(5) {
         font-size: 18px;
     }
 
+    .sections {
+        padding: 3%;
+    }
+
     .my-profile {
         display: grid;
         grid-template-areas:
