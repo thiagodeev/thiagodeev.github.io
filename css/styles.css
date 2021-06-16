@@ -4,6 +4,8 @@ body {
     width: 100%;
     line-height: 1.5em;
     font-size: 16px;
+    background: url(../images/svgs/binary.svg);
+    background-size: 360px;
     background-color: #000000d1;
 }
 
@@ -54,7 +56,7 @@ main {
     color: #14ed0cf5;   
     font-family: "Courier New", Courier, monospace;
     word-spacing: -8px;
-    margin: 1em 0;
+    margin-bottom: 1em;
     font-size: 1.4em;
 }
 
@@ -116,7 +118,6 @@ footer li a spam {
 
 .footer {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid: repeat(3, 1fr) / 1fr 1fr;
     padding: 2em 1.5em 0em;
     color: white;
@@ -133,17 +134,31 @@ footer li:nth-child(5) {
     width: 20px;
 }
 
+.references {
+    color: gray;
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 0.75em;
+}
+
+.references a {
+    color: gray;
+}
 
 
 
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-
+    
     body {
-        font-size: 18px;
+        font-size: 17px;
     }
 
+    main {
+        margin: 7% 5% 0;
+    }
+    
     .sections {
         padding: 3%;
     }
@@ -152,30 +167,43 @@ footer li:nth-child(5) {
         display: grid;
         grid-template-areas:
         "img h1"
-        "img p"
+        "img p1"
+        "img p2"
         "hobbies hobbies";
-        gap: 20px;
         column-gap: 40px;
     }
 
-    .figure-img {
-        grid-area: img;
-    }
-
-    .my-profile h1 {
-        grid-area: h1;
-    }
-    
-    .my-profile p {
-        grid-area: p;
-    }
+    .figure-img { grid-area: img;}
+    .my-profile h1 { grid-area: h1;}
+    .my-profile p:nth-child(1) { grid-area: p1;}
+    .my-profile p:nth-child(2) { grid-area: p2;}
 
     .hobbies {
         grid-area: hobbies;
     }
 
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer li:nth-child(1) { order: 1; flex-grow: 1;}
+    .footer li:nth-child(2) { order: 2; flex-grow: 1;}
+    .footer li:nth-child(3) { order: 4; flex-grow: 1;}
+    .footer li:nth-child(4) { order: 5; flex-grow: 1;}
+    .footer li:nth-child(5) { order: 3; flex-grow: 2;}
 
 
 
+  }
 
+  @media only screen and (min-width: 1000px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    main {
+        margin: 7% 10% 0;
+    }      
   }
