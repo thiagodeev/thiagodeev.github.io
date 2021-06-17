@@ -30,7 +30,7 @@ body {
     }
   }
 
-/***************************************/
+/************************************************/
 
 header nav {
     background-color: #d50000;
@@ -177,6 +177,12 @@ footer li:nth-child(5) {
 
 
 
+
+
+/************** media querys **************/
+
+
+
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     
@@ -224,17 +230,16 @@ footer li:nth-child(5) {
     .footer li:nth-child(4) { order: 5; flex-grow: 1;}
     .footer li:nth-child(5) { order: 3; flex-grow: 2;}
 
+}
 
-
-  }
-
-  @media only screen and (min-width: 1000px) {
+  
+@media only screen and (min-width: 1000px) {
     
     body {
         font-size: 18px;
     }
-    
+
     main {
         margin: 7% 10% 0;
     }      
-  }
+}
