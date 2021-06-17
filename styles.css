@@ -43,7 +43,7 @@ main {
     border-radius: 20px;
     padding: 6%;
     color: rgba(255, 255, 255, 0.932);
-    box-shadow: 0px 0px 5px 0px black;
+    /* box-shadow: 0px 0px 5px 0px black; */
 }
 
 .my-profile {
@@ -54,14 +54,6 @@ main {
     align-items: center;
 }
 
-.sections-title {
-    color: #14ed0cf5;   
-    font-family: "Courier New", Courier, monospace;
-    word-spacing: -8px;
-    margin-bottom: 1em;
-    font-size: 1.4em;
-}
-
 .figure-img {
     position: relative;
 }
@@ -70,6 +62,19 @@ main {
     max-width: 100%;
     max-height: 400px;
     border-radius: 20px;  
+}
+
+.sections-title {
+    color: #14ed0cf5;   
+    font-family: "Courier New", Courier, monospace;
+    word-spacing: -8px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-size: 1.4em;
+}
+
+.p-indent {
+    text-indent: 2em;
 }
 
 .lists {
@@ -98,7 +103,7 @@ footer {
     width: 100%;
     bottom: -10px;
     margin-top: 5em;
-    background-color: #131212;
+    background-color: rgb(19 18 18);
 }
 
 footer li {
