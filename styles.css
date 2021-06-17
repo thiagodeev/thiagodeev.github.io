@@ -138,6 +138,7 @@ footer li:nth-child(5) {
 }
 
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
+    height: 20px;
     width: 20px;
 }
 
