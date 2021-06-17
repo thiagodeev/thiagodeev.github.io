@@ -11,6 +11,27 @@ body {
     background-color: #000000d1;
 }
 
+/************** background animation**************/
+body {
+    animation: scroll 70s linear infinite;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+
+@media (prefers-reduced-motion) {
+    body {
+      animation: scroll 200s linear infinite;
+    }
+  }
+
+/***************************************/
+
 header nav {
     background-color: #d50000;
 }
