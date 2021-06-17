@@ -35,7 +35,7 @@ header nav {
 
 main {
     text-align: justify;
-    margin: 7% 3% 0;
+    margin: 4% 4% 0;
 }
 
 .sections {
@@ -119,7 +119,7 @@ footer li a:hover, a:visited, a:focus, a:active{
     color: whitesmoke;
 }
 
-footer li a spam {
+footer li a p {
     vertical-align: middle;
 }
 
@@ -174,7 +174,7 @@ footer li:nth-child(5) {
     .my-profile {
         display: grid;
         grid-template-areas:
-        "img h1"
+        "img h2"
         "img p1"
         "img p2"
         "hobbies hobbies";
@@ -182,7 +182,7 @@ footer li:nth-child(5) {
     }
 
     .figure-img { grid-area: img;}
-    .my-profile h1 { grid-area: h1;}
+    .my-profile h2 { grid-area: h2;}
     .my-profile p:nth-child(1) { grid-area: p1;}
     .my-profile p:nth-child(2) { grid-area: p2;}
 
