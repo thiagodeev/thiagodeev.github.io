@@ -215,6 +215,7 @@ footer li:nth-child(5) {
     .footer {
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
     .footer li:nth-child(1) { order: 1; flex-grow: 1;}
