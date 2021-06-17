@@ -4,7 +4,7 @@ body {
     width: 100%;
     line-height: 1.5em;
     font-size: 16px;
-    background-image: url(images/svgs/binary.svg);
+    background-image: url(images/svgs/binary.png);
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -155,6 +155,7 @@ footer li:nth-child(5) {
     
     body {
         font-size: 17px;
+        background-size: 500px;
     }
 
     main {
