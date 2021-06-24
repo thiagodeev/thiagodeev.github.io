@@ -1,0 +1,246 @@
+$title-color: #14ed0cf5;
+
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 16px;
+    background-image: url(images/svgs/binary.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: #000000d1;
+}
+
+/************** background animation**************/
+body {
+    animation: scroll 70s linear infinite;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+
+@media (prefers-reduced-motion) {
+    body {
+      animation: scroll 200s linear infinite;
+    }
+  }
+
+/************************************************/
+
+header nav {
+    background-color: #d50000;
+}
+
+.navbar {
+    display: flex;
+    -webkit-display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* .barra-lateral {
+    display: none;
+} */
+
+main {
+    text-align: justify;
+    margin: 4% 4% 0;
+}
+
+.sections {
+    background-color: rgba(19, 18, 18, 0.9);
+    border-radius: 20px;
+    padding: 6%;
+    color: rgba(255, 255, 255, 0.932);
+    /* box-shadow: 0px 0px 5px 0px black; */
+}
+
+.my-profile {
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.figure-img {
+    position: relative;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 20px;  
+}
+
+.sections-title {
+    color: $title-color;   
+    font-family: "Courier New", Courier, monospace;
+    word-spacing: -8px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-size: 1.4em;
+}
+
+.p-indent {
+    text-indent: 2em;
+}
+
+.lists {
+    list-style-image: url(images/svgs/terminal-solid.svg);
+    list-style-position: inside;
+    margin-top: 1em;
+    grid-area: hobbies;
+}
+
+.sections:nth-child(2), .sections:nth-child(3){
+    margin-top: 3em;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    section {
+        margin: 1em 1em 0;
+    
+    }
+}
+
+footer {
+    width: 100%;
+    bottom: -10px;
+    margin-top: 5em;
+    background-color: rgb(19, 18, 18);
+
+    li {
+        padding: 0.5em;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+
+            p {
+                vertical-align: middle;
+            }
+        }
+
+        a:hover, a:visited, a:focus, a:active{
+            color: whitesmoke;
+        }
+    }
+
+    li:nth-child(5) {
+        grid-column: span 2;
+        text-decoration: underline;
+    }
+}
+
+.footer {
+    display: grid;
+    grid: repeat(3, 1fr) / 1fr 1fr;
+    padding: 2em 1.5em 0em;
+    color: white;
+    font-size: 1.10rem;
+    text-align: center;
+}
+
+.facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.references {
+    color: gray;
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 0.75em;
+
+    a {
+        color: gray;
+    }
+}
+
+
+
+/************** media querys **************/
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    body {
+        font-size: 17px;
+        background-size: 500px;
+    }
+
+    main {
+        margin: 7% 5% 0;
+    }
+    
+    .sections {
+        padding: 3%;
+    }
+
+    .my-profile {
+        display: grid;
+        grid-template-areas:
+        "img h2"
+        "img p1"
+        "img p2"
+        "hobbies hobbies";
+        column-gap: 40px;
+    }
+
+    .figure-img { grid-area: img;}
+    .my-profile h2 { grid-area: h2;}
+    .my-profile p:nth-child(1) { grid-area: p1;}
+    .my-profile p:nth-child(2) { grid-area: p2;}
+
+    .hobbies {
+        grid-area: hobbies;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        li:nth-child(1) { order: 1; flex-grow: 1;}
+        li:nth-child(2) { order: 2; flex-grow: 1;}
+        li:nth-child(3) { order: 4; flex-grow: 1;}
+        li:nth-child(4) { order: 5; flex-grow: 1;}
+        li:nth-child(5) { order: 3; flex-grow: 2;}
+    }
+    
+
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        margin: 7% 10% 0;
+    }      
+}
