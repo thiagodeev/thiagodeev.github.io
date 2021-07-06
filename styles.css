@@ -46,28 +46,21 @@ header nav {
   background-color: #d50000;
 }
 
+/*
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 3em;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
+    display: flex;
+    -webkit-display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
 }
-
-/* .barra-lateral {
-    display: none;
-} */
+*/
 main {
   text-align: justify;
   margin: 4% 4% 0;
@@ -217,10 +210,7 @@ footer li:nth-child(5) {
   .my-profile {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "img h2"
- "img p1"
- "img p2"
- "hobbies hobbies";
+        grid-template-areas: "img h2" "img p1" "img p2" "hobbies hobbies";
     -webkit-column-gap: 40px;
             column-gap: 40px;
   }
